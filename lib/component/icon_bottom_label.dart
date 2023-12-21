@@ -14,9 +14,9 @@ class IconBottomLabel extends StatelessWidget {
     required this.image,
     required this.label,
     this.onPressed,
-    this.iconWidth = 50,
-    this.iconHeight = 50,
-    this.fontSize = 13,
+    this.iconWidth = 46,
+    this.iconHeight = 46,
+    this.fontSize = 12,
     this.fontWeight = FontWeight.w500,
   });
 
