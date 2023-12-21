@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_taxi_ui_clone/home_screen.dart';
+import 'package:kakao_taxi_ui_clone/my_info_screen.dart';
+import 'package:kakao_taxi_ui_clone/using_service_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -8,6 +11,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  List<Widget> _screens = [HomeScreen(), UsingServiceScreen(), MyInfoScreen()];
   int _index = 0;
 
   @override
@@ -25,6 +29,7 @@ class _MainScreenState extends State<MainScreen> {
           fontWeight: FontWeight.bold,
         ),
       ),
+      body: _screens[_index],
       bottomNavigationBar: Theme(
         data: ThemeData(
           splashColor: Colors.transparent,

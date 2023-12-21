@@ -5,8 +5,16 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text('홈'),
+    return Container(
+      width: double.infinity,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Text('icons'),
+          Text('banners'),
+          Text('notification'),
+        ],
+      ),
     );
   }
 }
