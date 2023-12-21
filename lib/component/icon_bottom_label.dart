@@ -35,6 +35,9 @@ class IconBottomLabel extends StatelessWidget {
             width: iconWidth,
             height: iconHeight,
           ),
+          SizedBox(
+            height: 8,
+          ),
           Text(
             label,
             style: TextStyle(
