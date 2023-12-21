@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kakao_taxi_ui_clone/banner_section.dart';
 import 'package:kakao_taxi_ui_clone/home_menu_section.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,7 +14,7 @@ class HomeScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           HomeMenuSection(),
-          Text('banners'),
+          BannerSection(),
           Text('notification'),
         ],
       ),
