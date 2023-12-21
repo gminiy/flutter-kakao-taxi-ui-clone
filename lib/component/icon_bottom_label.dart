@@ -22,24 +22,28 @@ class IconBottomLabel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        IconButton(
-          onPressed: onPressed ?? () {},
-          icon: Image.asset(
+    return TextButton(
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.all(10),
+        foregroundColor: Colors.black,
+      ),
+      onPressed: onPressed ?? () {},
+      child: Column(
+        children: [
+          Image.asset(
             image,
             width: iconWidth,
             height: iconHeight,
           ),
-        ),
-        Text(
-          label,
-          style: TextStyle(
-            fontSize: fontSize,
-            fontWeight: fontWeight,
+          Text(
+            label,
+            style: TextStyle(
+                fontSize: fontSize,
+                fontWeight: fontWeight,
+                color: Colors.black),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
